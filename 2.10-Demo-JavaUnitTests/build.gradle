@@ -36,11 +36,12 @@ failed test is identified and a stacktrace is provided for debugging purposes.
 */
 
 apply plugin: 'java'
+apply plugin: 'groovy'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testCompile 'junit:junit:4.12'
+    testCompile group: 'org.spockframework', name: 'spock-core', version: '1.1-groovy-2.4'
 }

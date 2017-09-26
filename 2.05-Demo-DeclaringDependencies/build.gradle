@@ -10,7 +10,7 @@ dependencies.
 */
 
 dependencies {
-    compile 'com.google.guava:guava:18.0'
+    compile 'com.google.guava:guava:23.0'
 }
 
 /*
@@ -27,7 +27,7 @@ A Groovy map syntax can also be used to identify dependencies.
 */
 
 dependencies {
-    compile group: 'com.google.guava', name: 'guava', version: '18.0'
+    compile group: 'com.google.guava', name: 'guava', version: '23.0'
 }
 
 /*

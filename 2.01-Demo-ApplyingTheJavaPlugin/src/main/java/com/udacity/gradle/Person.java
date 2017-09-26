@@ -1,5 +1,7 @@
 package com.udacity.gradle;
 
+import java.text.MessageFormat;
+
 public class Person {
     private final String name;
 
@@ -13,5 +15,8 @@ public class Person {
 
     public static void main(String[] args){
         System.out.println("Hello from Java");
+		if (args.length > 0) {
+			System.out.println(MessageFormat.format("Hello {1}", args[0]));
+		}
     }
 }
