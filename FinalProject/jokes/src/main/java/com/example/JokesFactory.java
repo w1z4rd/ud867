@@ -10,7 +10,6 @@ import lombok.experimental.UtilityClass;
 public final class JokesFactory {
     public static final Collection<String> PUNCH_LINE_TAGS = Collections.unmodifiableCollection(
             Arrays.asList("priest", "lawyer"));
-
     public static final Collection<String> JOKE_TAGS = Collections.unmodifiableCollection(
             Arrays.asList("grammar"));
 
