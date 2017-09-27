@@ -24,4 +24,11 @@ class JokesFactoryTest extends Specification {
         joke.tags.containsAll(["grammar"])
         joke.body == "The past, present and future walked into a bar... It was tense!"
     }
+
+    def "nobody should instantiate this class"() {
+        when: "instantiating the JokesFactory class"
+        new JokesFactory()
+        then: "a UnsupportedOperationException is thrown"
+        thrown(UnsupportedOperationException)
+    }
 }
