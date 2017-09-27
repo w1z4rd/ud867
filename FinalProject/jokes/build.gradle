@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'eu.appsatori:gradle-fatjar-plugin:0.3'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'jacoco'
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+
+    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination file("${buildDir}/jacocoHtml")
+    }
+}
